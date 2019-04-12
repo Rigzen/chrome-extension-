@@ -1,0 +1,27 @@
+{
+"manifest_version": 2,
+    "name": "blur",
+    
+"description": "xxx",
+    
+"version": "1.1",
+    
+"content_scripts": [
+        {
+            
+"matches": [
+                "*://*/*"
+            ],
+           
+ "js": [
+                "new.js"
+            ],
+            
+"run_at": "document_end"
+        }
+    ],"browser_action":{
+     "default_popup":"popup.html",
+     "default_title":"fix"   
+      },
+      "permissions": ["tabs"]
+}
